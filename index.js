@@ -11,29 +11,30 @@ Song.onloadedmetadata = function(){
 	Progress.max = Song.ondurationchange;
 	Progress.value = Song.currentTime;
 	songTitle.innerHTML = routh.slice(74,-4).split('%20').join(' ');
-	songDetails.nnerText = document.querySelector('source').src;
-	songDetails.nnerinnerHTML = document.querySelector('source').src;
-}
-function playPause(){
-    if(ControlBtn.classList.contains('fa-pause')){
-		Song.puase();
-		ControlBtn.classList.remove('fa-pause');
-		ControlBtn.classList.add('fa-play');
-	}else{
-		Song.play();
-		ControlBtn.classList.add('fa-pause');
-		ControlBtn.classList.remove('fa-play');
+	songDetails.innerText = document.querySelector('source').src;
+	songDetails.innerHTML = document.querySelector('source').src;
+	
+	function playPause(){
+	    if(ControlBtn.classList.contains('fa-pause')){
+	        Song.pause();
+	        ControlBtn.classList.remove('fa-pause');
+	        ControlBtn.classList.add('fa-play');
+	    }else{
+	        Song.play();
+	        ControlBtn.classList.add('fa-pause');
+	        ControlBtn.classList.remove('fa-play');
+	    }
 	}
-}
-if(Song.play()){
+	
 	setInterval(() => {
-		Progress.value = Song.currentTime;
+	    Progress.value = Song.currentTime;
 	}, 500);
-}
-Progress.onchange = function(){
-	Song.play();
-	Song.currentTime = Progress.value;
-	ControlBtn.classList.add('fa-pause');
-	ControlBtn.classList.remove('fa-play');
-}
+	
+	Progress.onchange = function(){
+	    Song.play();
+	    Song.currentTime = Progress.value;
+	    ControlBtn.classList.add('fa-pause');
+	    ControlBtn.classList.remove('fa-play');
+	}
+
 
