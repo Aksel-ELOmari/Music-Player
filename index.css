@@ -1,0 +1,134 @@
+*{
+	padding: 0;
+    margin: 0;
+}
+body
+{
+	min-height: 100vh;
+	width: 100%;
+}
+.container
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background: linear-gradient(23deg,rgba(255, 0, 212, 0.738),rgb(7, 245, 150),rgb(109, 28, 202)); */
+	background: #000;
+}
+.hero
+{
+	background: linear-gradient(23deg,rgba(255, 0, 212, 0.738),rgb(109, 28, 202));
+	border: solid 2px #000;
+	position: relative;
+	min-height: 300px;
+	min-width: 250px;
+	padding:2rem 1rem ;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	animation : Animate-hero 20s ease-in-out infinite forwards;
+
+}
+@keyframes Animate-hero{
+	from{
+		background: linear-gradient(20deg,rgba(255, 0, 212, 0.738),rgb(109, 28, 202));
+	}
+	to{
+		background: linear-gradient(360deg,rgba(255, 0, 212, 0.738),rgb(109, 28, 202));
+	}
+}
+.hero .Top-bar
+{
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	translate: 0 -50%;
+}
+.hero .Top-bar img
+{
+	background-color: #000;
+	padding: .5rem;
+	border-radius: 50%;
+	transition: .3s;
+	cursor: pointer;
+	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
+}
+.hero #main-audio{display: none;}
+.hero #photo{
+	height: 200px;
+	width: 200px;
+   margin-bottom: 20px;
+   border-radius: 50%;
+   border: solid 6px aqua;
+}
+.Details
+{
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+}
+.Details span
+{
+     font-weight: 400;
+	 color: rgb(55, 49, 49);
+}
+.hero #duration
+{ 
+	-webkit-appearance: none;
+	background:rgb(6, 64, 64);
+	width: 100%;
+	height: 6px;
+	margin: 10px 0;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.hero #duration::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+	background:rgb(8, 8, 169);
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+}
+.hero #duration::-webkit-slider-thumb:hover
+{
+
+	box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.56);
+}
+.controls
+{
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: .4rem 0;
+}
+.controls div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.controls div:nth-child(2){scale: 1.1;}
+.controls img
+{
+	background-color: #000;
+	padding: .5rem;
+	border-radius: 50%;
+	transition: .3s;
+	cursor: pointer;
+	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
+}
+.controls img:hover
+{
+	background-color: #333;
+}

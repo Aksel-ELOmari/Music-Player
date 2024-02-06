@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./fontawesome.css">
+	<link rel="stylesheet" href="index.css">
+	<title>Music Player - tagrawla 03/02/2024- </title>
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="hero">
+			<div class="Top-bar">
+				<img src="./img/prev-angle.png" alt="">
+                <img src="./img/bag.png" alt="">
+			</div>
+			<img id="photo" src="./img/shop_01.jpg" alt="">
+			<div class="Details">
+				<h1>3LUA</h1>
+				<span>Better With You - 3LAU</span>
+			</div>
+			<audio id="main-audio" controls>
+				<!-- <source src="./song/Better With You - 3LAU.mp3"> -->
+				<source src="./song/Billie Eilish - Bored (Lyrics) _ Giving you every piece of me(MP3_70K).mp3">
+			</audio>
+			<input value="0" step="1" type="range" name="progress" id="duration">
+			<div class="controls">
+				<img src="./img/prev-angle.png" alt="" class="cont-1">
+				<img src="./img/telephone.png" alt="" class="cont-2 fa-pause">
+				<img src="./img/next-angle.png" alt="" class="cont-3">
+			</div>
+		</div>
+	</div>
+	
+
+    <script src="index.js"></script>
+</body>
+</html>
