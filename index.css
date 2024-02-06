@@ -53,7 +53,7 @@ body
 	justify-content: space-between;
 	translate: 0 -50%;
 }
-.hero .Top-bar img
+.hero .Top-bar div
 {
 	background-color: #000;
 	padding: .5rem;
@@ -61,6 +61,11 @@ body
 	transition: .3s;
 	cursor: pointer;
 	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	height:35px;
+	width:35px;
 }
 .hero #main-audio{display: none;}
 .hero #photo{
@@ -117,6 +122,14 @@ body
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height:35px;
+	width:35px;
+	background-color: #000;
+	padding: .5rem;
+	border-radius: 50%;
+	transition: .3s;
+	cursor: pointer;
+	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
 }
 .controls div:nth-child(2){scale: 1.1;}
 .controls img
@@ -127,6 +140,7 @@ body
 	transition: .3s;
 	cursor: pointer;
 	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
+
 }
 .controls img:hover
 {
