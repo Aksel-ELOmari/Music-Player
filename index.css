@@ -68,6 +68,10 @@ body
 	height:35px;
 	width:35px;
 }
+.hero .Top-bar div i
+{
+	color:#fff;
+}
 .hero #main-audio{display: none;}
 .hero #photo{
 	height: 200px;
@@ -133,6 +137,7 @@ body
 	cursor: pointer;
 	box-shadow: 0px 6px 10px 0 rgba(71, 16, 16, 0.941);
 }
+.controls div i{color:#fff}
 .controls div:nth-child(2){scale: 1.1;}
 .controls img
 {
